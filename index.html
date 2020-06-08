@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+</head>
+<!--<link rel="stylesheet" href="mui-3.7.1/sass/mui.scss"/>-->
+<link href="mui-3.7.1/dist/css/mui.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/loading.css" rel="stylesheet">
+
+<header class="mui-bar mui-bar-nav ">
+    <h1 class="mui-title" id="title">我的主页</h1>
+</header>
+<body>
+
+<div class="mui-content div1">
+    <div class="mui-row">
+        <div class="mui-col-xs-4 mui-col-sm-4">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media" style="border: none;margin-left: 15px">
+                    <a href="#" onclick="switchOnOff()">
+                        <span class="tf-icon icon-switch-on" id="my_switch"></span>
+                        <div class="mui-media-body">开关</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-4 mui-col-sm-4">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-icon icon-scan"></span>
+                        <div class="mui-media-body">扫描连接电视</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-4 mui-col-sm-4">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media w100">
+                        <select class="tf-switch" style="margin-top: 10px" id="mySelect">
+                            <option value="节目1">节目1</option>
+                            <option value="节目2">节目2</option>
+                            <option value="节目3">节目3</option>
+                            <option value="节目4">节目4</option>
+                            <option value="节目5">节目5</option>
+                        </select>
+                        <div class="mui-media-body" >电视列表</div>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div2">
+    <div id="slider" class="mui-slider" >
+        <div class="mui-slider-group">
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="images/001.jpg" class="slider_img">
+                </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="images/002.jpg" class="slider_img">
+                </a>
+            </div>
+            <!-- 第三张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="images/003.jpg" class="slider_img">
+                </a>
+            </div>
+
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+</div>
+<div class="mui-content div3">
+<!--    <div class="mui-row">-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 70px">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 70px">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;margin-left: 15px">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+<!--                        <div class="mui-media-body">开关</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="mui-row" style="margin-top: -40px">-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 70px">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 70px">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;margin-left: 15px">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+<!--                        <div class="mui-media-body">开关</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="mui-row">-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 70px">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 70px">-->
+<!--            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">-->
+<!--                <li class="mui-table-view-cell mui-media" style="border: none;margin-left: 15px">-->
+<!--                    <a href="#">-->
+<!--                        <span class="tf-icon icon-switch"></span>-->
+<!--                        <div class="mui-media-body">开关</div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+<div class="div3" style="display: table">
+    <div class="item" style="display: table">
+        <a href="#" style="margin-left: 20px" onclick="collectChannel()">
+            <span>频道</span>
+            <img src="images/no-collected.png" style="width: 40px;height: 40px;" id="myChannel">
+        </a>
+    </div>
+    <div class="item" style="display: table-cell">
+        <a href="#" onclick="up()">
+            <img src="images/arrow-up.png" style="width: 40px;height: 40px;margin-left: 60px">
+        </a>
+    </div>
+    <div class="item" style="display: table-cell">
+        <a href="#" onclick="volumeUp()">
+            <img src="images/volume-up.png" style="width: 40px;height: 40px;margin-left: 60px">
+            <span>增大</span>
+        </a>
+    </div>
+</div>
+<div style="display: table;margin-top: 10px">
+    <div class="item" style="display: table">
+        <a href="#" style="margin-left: 110px" onclick="left()">
+            <img src="images/arrow-left.png" style="width: 40px;height: 40px;">
+        </a>
+    </div>
+    <div class="item" style="display: table-cell">
+        <a href="#" onclick="ok()">
+            <img src="images/ok.png" style="width: 40px;height: 40px;margin-left: 20px">
+        </a>
+    </div>
+    <div class="item" style="display: table-cell">
+        <a href="#" onclick="right()">
+            <img src="images/arrow-right.png" style="width: 40px;height: 40px;margin-left: 20px">
+        </a>
+    </div>
+</div>
+<div class="div3" style="display: table;margin-top: 10px">
+    <div class="item" style="display: table">
+        <a href="#" style="margin-left: 20px" onclick="collectShow()">
+            <span>节目</span>
+            <img src="images/no-collected.png" style="width: 40px;height: 40px;" id="myShow">
+        </a>
+    </div>
+    <div class="item" style="display: table-cell">
+        <a href="#" onclick="down()">
+            <img src="images/arrow-down.png" style="width: 40px;height: 40px;margin-left: 60px">
+        </a>
+    </div>
+    <div class="item" style="display: table-cell">
+        <a href="#" onclick="volumeDown()">
+            <img src="images/volume-down.png" style="width: 40px;height: 40px;margin-left: 60px">
+            <span>减小</span>
+        </a>
+    </div>
+</div>
+</body>
+<footer class="mui-bar mui-bar-tab " id="nav">
+    <a class="mui-tab-item mui-active" id="a1" href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item " id="a2" href="classify.html">
+        <span class="mui-icon mui-icon-list"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item " id="a3" href="collection.html">
+        <span class="mui-icon mui-icon-star"></span>
+        <span class="mui-tab-label">收藏</span>
+    </a>
+</footer>
+<script src="mui-3.7.1/dist/js/mui.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/loading.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+</script>
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    var gallery = mui('#slider');
+    gallery.slider({
+        interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+
+</script>
+
+</html>

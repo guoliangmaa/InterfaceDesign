@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="mui-3.7.1/dist/css/mui.min.css" rel="stylesheet"/>
+    <link href="css/classify.css" rel="stylesheet"/>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">节目分类</h1>
+</header>
+<div class="mui-content">
+    <div class="blueHeaderBg"></div>
+    <div id="slider" class="mui-slider ">
+        <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+            <div class="titleList">
+                <a class="mui-control-item paddingNone mui-active " id="all" data-id="0"  onclick="showAllClassify(this)">
+                    全部分类
+                </a>
+                <a class="mui-control-item paddingNone" id="collected" data-id="1"  onclick="showCollectedClassify(this)">
+                    常用分类
+                </a>
+            </div>
+        </div>
+
+        <div class="mui-slider-group">
+
+            <!--全部-->
+            <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li>ss</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--待审核-->
+            <div id="item2mobile" class="mui-slider-item mui-control-content">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="all-classify " id="all-classify">
+    <div class="mui-row" style="margin-bottom: 10px">
+        <div class="mui-col-xs-4 mui-col-sm-4">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media" style="border: 1px blue solid;margin-left: 15px">
+                    <a href="#" >
+                        <span class="tf-icon icon-sports"></span>
+                        <div class="mui-media-body">体育</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" >
+                        <span class="tf-arrow icon-basketball"></span>
+                        <div class="mui-media-body">篮球</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" >
+                        <span class="tf-arrow icon-football"></span>
+                        <div class="mui-media-body">足球</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-ping-pong"></span>
+                        <div class="mui-media-body">乒乓球</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;height:1px;border-top:solid rgb(0,0,0) 1px; "></div>
+    <div class="mui-row" style="margin-top: 10px;margin-bottom: 10px">
+        <div class="mui-col-xs-4 mui-col-sm-4">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media" style="border: 1px blue solid;margin-left: 15px">
+                    <a href="#" onclick="">
+                        <span class="tf-icon icon-news" id="my_switch"></span>
+                        <div class="mui-media-body">新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify" style="margin-left: -10px">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-news-morning"></span>
+                        <div class="mui-media-body">早间新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-news-moon"></span>
+                        <div class="mui-media-body">午间新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-news-evening"></span>
+                        <div class="mui-media-body">晚间新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;height:1px;border-top:solid rgb(0,0,0) 1px;"></div>
+    <div class="mui-row" style="margin-top: 10px">
+        <div class="mui-col-xs-4 mui-col-sm-4">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media" style="border: 1px blue solid;margin-left: 15px">
+                    <a href="#" onclick="">
+                        <span class="tf-icon icon-opera" id=""></span>
+                        <div class="mui-media-body">新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-opera-beijing"></span>
+                        <div class="mui-media-body">京剧</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-opera-huanmei"></span>
+                        <div class="mui-media-body">黄梅戏</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-opera-two"></span>
+                        <div class="mui-media-body">二人转</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="collected-classify mui-hidden" id="collected-classify">
+
+    <div class="mui-row" style="margin-bottom: 10px">
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify1">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media" style="margin-left: 15px">
+                    <a href="#" onclick="">
+                        <span class="tf-arrow icon-opera-beijing"></span>
+                        <div class="mui-media-body">京剧</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify1" style="margin-left: 5px">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-news-morning"></span>
+                        <div class="mui-media-body">早间新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify1">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-news-evening"></span>
+                        <div class="mui-media-body">晚间新闻</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="mui-col-xs-2 mui-col-sm-2 small-classify1">
+            <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                <li class="mui-table-view-cell mui-media ">
+                    <a href="#" onclick="connectTV()">
+                        <span class="tf-arrow icon-ping-pong"></span>
+                        <div class="mui-media-body">乒乓球</div>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+<!--    <a class="fr-btn" href="#fengrui">有本事你点我哇！</a>-->
+</div>
+
+<div class="mui-content">
+    <!-- 点击触发 -->
+
+
+    <!--mui-popover-action：表示点击时显示-->
+
+</div>
+
+
+<div class="mui-popover mui-popover-bottom mui-popover-action fr-tc" id="fengrui">
+    <div class="fr-div-w mui-content">
+
+        <div class="mui-row" style="margin-left: -30px;">
+            <div class="mui-col-xs-4 mui-col-sm-4" id="icon">
+                <div class="mui-row mui-table-view mui-grid-view mui-grid-9 icon-center-div">
+                    <li class="mui-table-view-cell mui-media" style="border: none">
+                        <a href="#" onclick="">
+                            <span class="tf-icon icon-opera" ></span>
+                            <div class="mui-media-body">京剧</div>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <div class="mui-col-xs-6 mui-col-sm-6" style="margin-left: -10px;margin-top: 40px" id="name">
+                <div >节目名称：<span>京剧大放送</span></div>
+                <div style="margin-top: 20px">播出时间：<span>每晚8:30</span></div>
+            </div>
+            <div class="mui-col-xs-2 mui-col-sm-2" style="margin-left: 10px;margin-top: 30px">
+                <div>
+                    <a href="#" onclick="changeChannel(0)">
+                        <span class="tf-arrow icon-up"></span>
+                    </a>
+                </div>
+                <div style="margin-top: 10px">
+                    <a href="#" onclick="changeChannel(1)">
+                        <span class="tf-arrow icon-down"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="mui-row" style="margin-top: 10px">
+
+             <div class="div-inline"><a href="index.html"><button>播放</button></a></div>
+            <div class="div-inline"><a><button onclick="collect(this)">收藏</button></a></div>
+            <div class="div-inline"><a href="#fengrui"><button>返回</button></a></div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer class="mui-bar mui-bar-tab " id="nav">
+    <a class="mui-tab-item" id="a1" href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item mui-active" id="a2" href="classify.html">
+        <span class="mui-icon mui-icon-list"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item " id="a3" href="collection.html">
+        <span class="mui-icon mui-icon-star"></span>
+        <span class="mui-tab-label">收藏</span>
+    </a>
+</footer>
+<script src="mui-3.7.1/dist/js/mui.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/classify.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

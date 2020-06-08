@@ -1,0 +1,123 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-color: rgb(242, 242, 242);
+}
+.fr-tc{
+    /* 控制弹窗高度 */
+    height: 30%;
+}
+.fr-div-w{
+    border-radius: 10px 10px  0px 0px;
+    background-color: rgb(247, 247, 247);
+    height: 100%;
+    /*padding: 15px;*/
+}
+.fr-btn{
+    display: block;
+    height: 40px;
+    width: 20%;
+    background-color: #14b5ff;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin: 50px auto;
+}
+
+.icon-sports {
+    background-image: url('../images/sports.png');
+    background-size: 100% 100%;
+}
+
+.icon-basketball {
+    background-image: url('../images/basketball.png');
+    background-size: 100% 100%;
+}
+
+.icon-football {
+    background-image: url('../images/football.png');
+    background-size: 100% 100%;
+}
+
+.icon-ping-pong {
+    background-image: url('../images/ping-pong.png');
+    background-size: 100% 100%;
+}
+
+.icon-news {
+    background-image: url('../images/news.png');
+    background-size: 100% 100%;
+}
+
+.icon-news-morning {
+    background-image: url('../images/morning.png');
+    background-size: 100% 100%;
+}
+
+.icon-news-moon {
+    background-image: url('../images/moon.png');
+    background-size: 100% 100%;
+}
+
+.icon-news-evening {
+    background-image: url('../images/night.png');
+    background-size: 100% 100%;
+}
+
+.icon-opera {
+    background-image: url('../images/xiqu.jpg');
+    background-size: 100% 100%;
+}
+
+.icon-opera-beijing {
+    background-image: url('../images/beijing-opera.jpg');
+    background-size: 100% 100%;
+}
+
+.icon-opera-huanmei {
+    background-image: url('../images/huagnmeixi.jpg');
+    background-size: 100% 100%;
+}
+
+.icon-opera-two {
+    background-image: url('../images/errenzhuan.jpg');
+    background-size: 100% 100%;
+}
+
+.icon-up{
+    background-image: url('../images/arrow-up.png');
+    background-size: 100% 100%;
+}
+
+.icon-down{
+    background-image: url('../images/arrow-down.png');
+    background-size: 100% 100%;
+}
+
+.tf-icon{
+    display: inline-block;
+    width: 50px;height: 50px;
+}
+
+.tf-arrow{
+    display: inline-block;
+    width: 30px;height: 30px;
+}
+
+.small-classify{
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.small-classify1{
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.div-inline{
+    display: inline;
+    margin-left: 50px;
+    width: 80px;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Title</title>
+    <script src="mui-3.7.1/dist/js/mui.min.js"></script>
+    <link href="mui-3.7.1/dist/css/mui.min.css" rel="stylesheet"/>
+	<style type="text/css">
+		body,
+		.mui-overflow {
+			background-color: #efeff4;
+			-webkit-overflow-scrolling: touch;
+			overflow:auto;
+		}
+		.mui-icon-h:before
+		{
+			content: url(./images/error.png);
+			width:5px;
+			height:5px;
+		}
+		.mui-switch.mui-active:before{
+			content:'提醒';
+		}
+		.mui-switch:before{
+			content:'不提醒';
+		}
+	</style>
+</head>
+
+<header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">我的收藏</h1>
+</header>
+
+<body>
+	<div class="mui-content" style=" padding: 0px; margin-top: 50px;height: 560px;">
+		<div class="mui-overflow" style="height: 50%; border: 1px solid #000000;">
+
+			<h2 class="mui-title">频道收藏</h2>
+			<div class="mui-content" style="margin-top: 40px;">
+				<div class="mui-card">
+					<ul class="mui-table-view" id="OA_task_1">
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道1 &nbsp 001 &nbsp CCTV-1综合
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h"style="margin-left: 39px;">
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道2 &nbsp 045 &nbsp 湖南卫视
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h"style="margin-left: 60px;">
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道3 &nbsp 011 &nbsp CCTV-11戏曲
+							 </div>
+							 <div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h"style="margin-left: 34px;">
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道4 &nbsp 145 &nbsp 河北卫视
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h"style="margin-left: 60px;">
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道5 &nbsp 198 &nbsp CIBN情感影院
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h"style="margin-left: 27px;">
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道6 &nbsp 082 &nbsp BTV文艺
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h"style="margin-left: 60px;">
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							频道7 &nbsp 108 &nbsp 浙江卫视
+							</div>
+							<div style="display: inline;">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 58px;" >
+								 <span class="mui-icon "></span>
+								 取消收藏
+							</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mui-overflow" style="height: 50%; border: 1px solid #000000;">
+			<h2 class="mui-title">节目收藏</h2>
+			<div class="mui-content" style="margin-top: 40px;">
+				<div class="mui-card">
+					<ul class="mui-table-view" id="OA_task_2">
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							一鸣惊人 &nbsp 18:11
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 63px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							绝对有戏 &nbsp 20:00
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 63px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							冠军欧洲 &nbsp 12:35
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 63px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							乡村爱情 &nbsp 20:00
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 63px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							百寿探秘 &nbsp 21:40
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 63px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							档案 &nbsp 21:35
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 90px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline; ">
+							爱情保卫战 &nbsp 22:00
+							</div>
+							<div style="display: inline; ">
+							<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left: 47px;">
+								 <span class="mui-icon "></span>
+								 取消
+							</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div style="display: inline;">
+								风筝 &nbsp 20:00
+							</div>
+							<div  style="display: inline; ">
+								<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-icon mui-icon-h" style="margin-left:90px;">
+									 <span class="mui-icon "></span>
+									 取消
+								</button>
+							</div>
+							<div id="M_Toggle" class="mui-switch mui-active" >
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="mui-bar mui-bar-tab " id="nav">
+	    <a class="mui-tab-item" id="a1" href="index.html">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item " id="a2" href="classify.html">
+	        <span class="mui-icon mui-icon-list"></span>
+	        <span class="mui-tab-label">分类</span>
+	    </a>
+	    <a class="mui-tab-item mui-active" id="a3" href="collection.html">
+	        <span class="mui-icon mui-icon-star"></span>
+	        <span class="mui-tab-label">收藏</span>
+	    </a>
+	</footer>
+</body>
+
+<script type="text/javascript" charset="utf-8">
+	mui.init();
+	(function($) {
+		var btnArray = ['确认', '取消'];
+		//频道收藏的取消收藏功能
+		$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+			var elem = this;
+			var li = elem.parentNode.parentNode;
+			mui.confirm('确认删除该收藏？', '提醒', btnArray, function(e) {
+				if (e.index == 0) {
+					li.parentNode.removeChild(li);
+				} else {
+					setTimeout(function() {
+						$.swipeoutClose(li);
+					}, 0);
+				}
+			});
+		});
+		//节目收藏的取消收藏功能
+		$('#OA_task_2').on('tap', '.mui-btn', function(event) {
+			var elem = this;
+			var li = elem.parentNode.parentNode;
+			mui.confirm('确认删除该收藏？', '提醒', btnArray, function(e) {
+				if (e.index == 0) {
+					li.parentNode.removeChild(li);
+				} else {
+					setTimeout(function() {
+						$.swipeoutClose(li);
+					}, 0);
+				}
+			});
+		});
+	})(mui);
+</script>
+</html>
